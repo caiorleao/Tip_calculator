@@ -1,0 +1,44 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: black;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(354deg, #275DAD, #102647);
+    position: absolute;
+}
+.card{
+    height: 500px;
+    position: relative;
+    margin: 5% auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+}
+.card-body {
+    margin: -40% 0 0 0;
+    padding: 0 0 0 0 ;
+    height: 100%;
+    width: 100%;
+}
+#lblAtendente{
+    padding: 0;
+    margin: 0;  
+}
+#lblValor{
+    padding: 0;
+    margin: 0;  
+}
+#txtValor{
+    padding: 0;
+    margin: 0;
+}
+.btn{
+    background-image: linear-gradient(-354deg, #275DAD, #102647);
+    border-color: black;  
+}
+#gorjeta{
+    font-size: 100%;
+}

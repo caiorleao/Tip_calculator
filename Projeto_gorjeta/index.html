@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Page Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+
+          <div class="card col-md-4 offset-md-4">
+            <h5 class="card-title col-md-6 col-sm-10 offset-3">
+              Calculadora de Gorjeta<h5>
+
+              <div class="card-body">
+                  <!--Valor da conta-->
+                  <div id="valor" class=" offset-2">
+                    <p class="col-12" id="lblValor">Valor da conta</p>
+                    <input type="number" class="col-10" id="txtValor" min="0.00" step="0.5">
+                  </div>
+
+                  <!--Escolha atendente-->
+                  <div id="atendente" class=" offset-2">
+                    <p class="col-12" id="lblAtendente">Atendente</p>
+                    <select class="col-10" id="cboAtendente">
+                      <option value="Julio">Julio</option>
+                      <option value="Roberto">Roberto</option>
+                      <option value="Zé">Zé</option>
+                      <option value="Marcela">Marcela</option>
+                      <option value="Juliana">Juliana</option>
+                    </select>
+                  </div>
+
+                  <!--Escolha nível serviço-->
+                  <div id="nvServico" class=" offset-2">
+                    <p class="col-12" id="lblValor">Qualidade do serviço</p>
+                    <select class="col-10" class="cboServico">
+                      <option value="0.3">30%--Excelente</option>
+                      <option value="0.20">20%--Bom</option>
+                      <option value="0.15">15%--Mediano</option>
+                      <option value="0.1">10%--Ruim</option>
+                      <option value="0.05">5  %--Péssimo</option>
+                    </select>
+                  </div>
+
+                  <!--Quantidade de pessoas para dividir a conta-->
+                  <div id="Divisao" class=" offset-2">
+                    <p class="col-12" id="lblValor">Quantas pessoas irão dividir?</p>
+                    <input id="qntPessoas" disabled="true" type="number" class="col-10" min="2" step="1">
+                  
+                  <!--CheckBox para divisão igualitaria-->
+                    <input id="check" type="checkbox" class="col-1 offset-1" onclick="enabledNUD()" value="true">Dividir igualmente
+                  </div>
+
+                  <div id="btn" class="col-12">
+                    <p class="card-text"></p>
+                    <button href="#" onclick="setValues()" class="btn btn-primary col-6 offset-3" id="btnCalcular">Calcular
+                    </button>
+                  </div>
+                  
+                  <div class="mt-2 col-12" id="gorjeta">
+                    <div class="row">
+                      <p>Total com Gorjeta -></p>
+                      <span id="moeda1"></span>
+                      <span id="TotalWithTip" value="00.00"></span>
+                    </div>
+                    <div class="row" id="divIgual"> 
+                      <p>Divisão igualitaria com Gorjeta -></p>
+                      <span id="moeda2"></span>
+                      <span id="DivWithTip" value="00.00"></span>
+                    </div>
+                    <div class="row">
+                        <p>Total da Gorjeta -></p>  
+                        <span id="moeda3"></span>
+                        <span id="tip" value="00.00"></span>
+                    </div>  
+                  </div>
+              </div>
+          </div>
+      
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>
